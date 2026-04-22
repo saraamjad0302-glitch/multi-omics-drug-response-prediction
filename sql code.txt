@@ -1,0 +1,16 @@
+-- ============================================
+-- Multi-Omics Integration
+-- ============================================
+
+-- NOTE:
+-- Multi-omics feature tables (miRNA, metabolomics, copy number, expression,
+-- mutation, and protein array) were integrated iteratively by joining
+-- t-SNE reduced feature tables across omics layers.
+-- 
+-- The query below represents the final integration step, where the fully
+-- integrated multi-omics feature table is joined with drug response (AUC) data.
+
+CREATE TABLE drug_proexp_mutcnv_mirna_meta_tsne_result AS
+SELECT *
+FROM fullproexp_mutcnv_mirna_meta_tsne_result
+JOIN drug_sensitivity_auc_gdsc1 USING (cell_line); 
