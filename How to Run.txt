@@ -1,0 +1,7 @@
+## How to Run
+
+1. Run excel_tsne_dimensionality_reduction.py
+2. Execute SQL script to integrate omics features
+3. Run kmeans_clustering.py
+4. Run calculate cluster size.py
+5. Run rf_prediction.py

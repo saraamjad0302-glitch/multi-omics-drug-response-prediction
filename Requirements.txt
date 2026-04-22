@@ -1,0 +1,13 @@
+## Requirements
+- Python 3.x
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- sqlalchemy
+- mysql-connector-python
+
+## Database
+- MySQL Server (required for data storage and querying)
+
+Note: Raw data is derived from DepMap datasets
